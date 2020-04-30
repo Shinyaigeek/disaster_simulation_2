@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Line } from "react-chartjs-2";
 
+import "./s.scss"
+
 interface Props {
   label: string;
   dot: number[][];
@@ -36,13 +38,18 @@ export const LineChart = (props: Props) => {
         }}
       />
 
-      <div className="form">
+      <div className="form" style={{
+        margin: "12px auto"
+      }}>
         <input
           type="range"
           max="1"
           min="0"
           step="0.2"
           value={t}
+          style={{
+            margin: "0 auto"
+          }}
           onChange={(e) => {
             const v = Number(e.target.value);
             if (v >= 0 && v <= 1) {
@@ -50,7 +57,10 @@ export const LineChart = (props: Props) => {
             }
           }}
         />
-        <div>t: {t}, min:0 ~ max:1.0</div>
+        <div style={{
+          textAlign: "center",
+          paddingTop:"12px"
+        }}>t: {t}, min:0 ~ max:1.0</div>
       </div>
     </div>
   );
