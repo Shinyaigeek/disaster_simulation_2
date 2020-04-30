@@ -1,0 +1,39 @@
+{
+  "name": "disaster_simulation_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shinyaigeek/disaster_simulation_2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shinyaigeek/disaster_simulation_2/issues"
+  },
+  "homepage": "https://github.com/Shinyaigeek/disaster_simulation_2#readme",
+  "dependencies": {
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "babel-loader": "^8.1.0",
+    "chart.js": "^2.9.3",
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.2.0",
+    "react": "^16.13.1",
+    "react-chartjs-2": "^2.9.0",
+    "react-dom": "^16.13.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.0",
+    "ts-loader": "^7.0.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
