@@ -24,12 +24,13 @@ export const LineChart = (props: Props) => {
           labels: getLabels(-10, 11),
           datasets: [
             {
-              label: "オイラー陽解法",
+              label: props.label,
               data: props.dot[t * 5],
               backgroundColor: props.dotColor,
               borderColor: props.lineColor,
               borderWidth: 2,
               fill: false,
+              lineTension: 0
             },
           ],
         }}
